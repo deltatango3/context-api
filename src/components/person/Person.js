@@ -11,6 +11,8 @@ const Person = () => {
           {context.state.dogs.map(dog => {
             return <p>{dog}</p>;
           })}
+          <p>{context.state.number}</p>
+          <button onClick={context.addNumber}>Add Age</button>
         </React.Fragment>
       )}
     </MyContext.Consumer>
